@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --primary-clr: #2F3386;
+    --secondary-clr: #EE2B7C;
+    --light-blue-clr: #E3E9FF;
+    --primary-text: #2D2D2D;
+    --secondary-text: #3F3F3F;
+    --gradient-text: inear-gradient(136deg, #2F3386 0%, #EE2B7C 100%);
+}
