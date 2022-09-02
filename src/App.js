@@ -12,6 +12,8 @@ import {
 } from './containers';
 import { Navbar } from './components';
 
+import './app.css';
+
 const App = () => {
   return (
     <div className="App">

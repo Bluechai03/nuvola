@@ -1,0 +1,82 @@
+.nuvola__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80px;
+    outline: 1px solid red
+}
+
+.nuvola__navbar-logo img {
+    max-width: 61px;
+}
+
+.nuvola__navbar-links-container > ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.nuvola__navbar-links-container li > a {
+    text-transform: uppercase;
+}
+
+.nuvola__navbar-links-container li > a:hover{
+    color: var(--secondary-clr);
+}
+
+.nuvola__navbar-socials-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nuvola__navbar-socials__img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.nuvola__navbar-mobile-menu{
+    cursor: pointer;
+}
+
+.nuvola__navbar-mobile-menu-container{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nuvola__navbar-mobile-menu-container__row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nuvola__navbar-mobile-menu-container-links {
+    text-align: end;
+    text-transform: uppercase;
+}
+
+.nuvola__navbar-mobile-menu-container-links > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    list-style: none;
+    gap: 3rem;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.nuvola__navbar-mobile-menu-container-links > li{
+    list-style: none;
+    
+}
