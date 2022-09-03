@@ -4,7 +4,6 @@
     align-items: center;
     flex-wrap: wrap;
     height: 80px;
-    outline: 1px solid red
 }
 
 .nuvola__navbar-logo img {
@@ -23,6 +22,7 @@
 
 .nuvola__navbar-links-container li > a {
     text-transform: uppercase;
+    transition: color 150ms ease-in-out;
 }
 
 .nuvola__navbar-links-container li > a:hover{
@@ -31,7 +31,7 @@
 
 .nuvola__navbar-socials-container {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .nuvola__navbar-socials__img{
@@ -42,6 +42,10 @@
 
 /* Mobile Menu */
 .nuvola__navbar-mobile-menu{
+    display: none;
+}
+
+.nuvola__navbar-mobile-menu svg {
     cursor: pointer;
 }
 
@@ -51,32 +55,77 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    backdrop-filter: sepia(100%);
 }
 
-.nuvola__navbar-mobile-menu-container__row{
+.nuvola__navbar-mobile-menu-container{
+    padding: 2rem;
+    background: rgba(95, 95, 95, 0.5);
+    -webkit-backdrop-filter: blur(4.5px);
+    backdrop-filter: blur(4.5px);
+}
+
+.nuvola__navbar-mobile-menu-container-top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
+.nuvola__navbar-mobile-menu-container-top svg{
+    color: #FFF;
+    transition: color 150ms ease-in-out;
+}
+
+.nuvola__navbar-mobile-menu-container-top svg:hover {
+    color: var(--primary-clr);
+}
+
+/* Mobile Menu Links */
 .nuvola__navbar-mobile-menu-container-links {
     text-align: end;
     text-transform: uppercase;
+    margin-top: 2rem;
 }
 
 .nuvola__navbar-mobile-menu-container-links > ul{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     list-style: none;
-    gap: 3rem;
     font-family: var(--font-family);
     font-size: 14px;
     font-weight: 600;
     line-height: 21px;
+    color: #fff;
 }
+
 
 .nuvola__navbar-mobile-menu-container-links > li{
     list-style: none;
-    
+}
+.nuvola__navbar-mobile-menu-container-links li > a{
+    transition: color 150ms ease-in-out;
+}
+
+.nuvola__navbar-mobile-menu-container-links li > a:hover{
+    color: var(--primary-clr);
+}
+
+@media screen and (max-width: 1000px){
+    .nuvola__navbar-socials-container{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .nuvola__navbar-links-container,
+    .nuvola__navbar-language{
+        display: none;
+    }
+
+    .nuvola__navbar-mobile-menu{
+        display: flex;
+    }
+
 }

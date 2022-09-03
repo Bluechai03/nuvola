@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
+import { RiMenuLine, RiCloseLine, RiMenuFoldLine } from 'react-icons/ri';
 import logo from '../../assets/logo.png';
 import { facebook, youtube, instagram } from './imports';
 import israel from '../../assets/israel.png';
@@ -28,13 +28,23 @@ const Menu = () => (
 const Socials = () => (
   <>
     <div>
-      <img class="nuvola__navbar-socials__img" src={facebook} alt="facebook" />
+      <a href="https://www.facebook.com/novolaisrael" target="_blank" rel="noreferrer">
+        <img class="nuvola__navbar-socials__img" src={facebook} alt="facebook" />
+      </a>
     </div>
     <div>
-      <img class="nuvola__navbar-socials__img" src={youtube} alt="youtube" />
+      <a
+        href="https://www.youtube.com/channel/UCX-em37_sfZwc6doHMPnMHA"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img class="nuvola__navbar-socials__img" src={youtube} alt="youtube" />
+      </a>
     </div>
     <div>
-      <img class="nuvola__navbar-socials__img" src={instagram} alt="instagram" />
+      <a href="https://www.instagram.com/nuvola_israel/" target="_blank" rel="noreferrer">
+        <img class="nuvola__navbar-socials__img" src={instagram} alt="instagram" />
+      </a>
     </div>
   </>
 );
@@ -43,38 +53,46 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="nuvola__navbar section__padding">
-      <div className="nuvola__navbar-logo">
-        <img src={logo} alt="logo" />
-      </div>
-      <div className="nuvola__navbar-links-container">
-        <Menu />
-      </div>
-      <div className="nuvola__navbar-socials-container">
-        <Socials />
-      </div>
-      <div className="nuvola__navbar-language"></div>
-      <div className="nuvola__navbar-mobile-menu">
-        {toggleMenu ? (
-          <RiCloseLine color="#2F3386" size={27} onClick={() => setToggleMenu(false)} />
-        ) : (
-          <RiMenuLine color="#2F3386" size={27} onClick={() => setToggleMenu(true)} />
-        )}
-        {toggleMenu && (
-          <div className="nuvola__navbar-mobile-menu-container scale-up-center">
-            <div className="nuvola__navbar-mobile-menu-container__row">
-              <img src={israel} alt="israel flag" />
-              <RiCloseLine
-                color="#2F3386"
-                size={27}
-                onClick={() => setToggleMenu(false)}
-              />
+    <div className="shadow-drop-bottom">
+      <div className="nuvola__navbar section__padding">
+        <div className="nuvola__navbar-logo">
+          <img src={logo} alt="logo" />
+        </div>
+        <div className="nuvola__navbar-links-container">
+          <Menu />
+        </div>
+        <div className="nuvola__navbar-socials-container">
+          <Socials />
+        </div>
+        <div className="nuvola__navbar-language">
+          <img src={israel} alt="israel flag" />
+        </div>
+        <div className="nuvola__navbar-mobile-menu">
+          {toggleMenu ? (
+            <RiMenuFoldLine
+              color="#2F3386"
+              size={27}
+              onClick={() => setToggleMenu(false)}
+            />
+          ) : (
+            <RiMenuLine color="#2F3386" size={27} onClick={() => setToggleMenu(true)} />
+          )}
+          {toggleMenu && (
+            <div
+              className={`nuvola__navbar-mobile-menu-container ${
+                toggleMenu ? 'scale-up-hor-center' : 'scale-down-hor-center'
+              }  `}
+            >
+              <div className="nuvola__navbar-mobile-menu-container-top">
+                <img src={israel} alt="israel flag" />
+                <RiCloseLine size={27} onClick={() => setToggleMenu(false)} />
+              </div>
+              <div className="nuvola__navbar-mobile-menu-container-links">
+                <Menu />
+              </div>
             </div>
-            <div className="nuvola__navbar-mobile-menu-container-links">
-              <Menu />
-            </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );
