@@ -1,0 +1,23 @@
+.nuvola__hero{
+    position: relative;
+    background: var(--light-blue-clr) url('../../assets/section-bg.png') no-repeat;
+    background-size: cover;
+}
+
+.nuvola__hero-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nuvola__hero-content-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.col--one{
+}
+
+.col--two{
+}

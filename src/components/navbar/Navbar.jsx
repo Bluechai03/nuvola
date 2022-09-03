@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { RiMenuLine, RiCloseLine, RiMenuFoldLine } from 'react-icons/ri';
-import logo from '../../assets/logo.png';
 import { facebook, youtube, instagram } from './imports';
+
+import logo from '../../assets/logo.png';
 import israel from '../../assets/israel.png';
 import './navbar.css';
 
@@ -53,8 +54,8 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="shadow-drop-bottom">
-      <div className="nuvola__navbar section__padding">
+    <div className="nuvola__navbar">
+      <div className="nuvola__navbar-content section__padding">
         <div className="nuvola__navbar-logo">
           <img src={logo} alt="logo" />
         </div>
@@ -67,6 +68,7 @@ const Navbar = () => {
         <div className="nuvola__navbar-language">
           <img src={israel} alt="israel flag" />
         </div>
+
         <div className="nuvola__navbar-mobile-menu">
           {toggleMenu ? (
             <RiMenuFoldLine
@@ -78,11 +80,7 @@ const Navbar = () => {
             <RiMenuLine color="#2F3386" size={27} onClick={() => setToggleMenu(true)} />
           )}
           {toggleMenu && (
-            <div
-              className={`nuvola__navbar-mobile-menu-container ${
-                toggleMenu ? 'scale-up-hor-center' : 'scale-down-hor-center'
-              }  `}
-            >
+            <div className="nuvola__navbar-mobile-menu-container scale-up-hor-center ">
               <div className="nuvola__navbar-mobile-menu-container-top">
                 <img src={israel} alt="israel flag" />
                 <RiCloseLine size={27} onClick={() => setToggleMenu(false)} />

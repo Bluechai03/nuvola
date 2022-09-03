@@ -1,10 +1,21 @@
 .nuvola__navbar{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: sticky;
+    inset: 0;
+    z-index: 10;
     height: 80px;
+    background: #FFF;
 }
+
+.nuvola__navbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 
 .nuvola__navbar-logo img {
     max-width: 61px;
@@ -55,10 +66,11 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    backdrop-filter: sepia(100%);
+    z-index: 10;
 }
 
 .nuvola__navbar-mobile-menu-container{
+    min-height: 100vh;
     padding: 2rem;
     background: rgba(95, 95, 95, 0.5);
     -webkit-backdrop-filter: blur(4.5px);
