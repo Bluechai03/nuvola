@@ -1,11 +1,7 @@
 .nuvola__navbar{
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     position: sticky;
     inset: 0;
     z-index: 10;
-    height: 80px;
     background: #FFF;
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import nuvolaStand from '../../assets/nuvola-stand.png';
-
+import vector1 from '../../assets/hero-blobs/Vector-1.svg';
 import './hero.css';
 
 const Hero = () => {
@@ -19,6 +19,16 @@ const Hero = () => {
         </div>
         <div className="nuvola__hero-content-col col--two">
           <img src={nuvolaStand} alt="nuvola sample" />
+          <img src={vector1} alt="" className="vector" />
+        </div>
+        <div className="nuvola__hero-content-col col--three">
+          <p className="nuvola__hero-content__sub-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button type="button" className="nuvola__hero-content__btn">
+            Text
+          </button>
         </div>
       </div>
     </div>

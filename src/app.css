@@ -6,6 +6,7 @@
 }
 
 body{
+  font-family: var(--font-family);
 }
 
 a {
@@ -13,13 +14,32 @@ a {
     text-decoration: none;
 }
 
+button{
+  background: var(--secondary-clr);
+  border-radius: 10px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 1rem 6.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .section__padding{
     max-width: 1170px;
     padding: 1rem 2rem;
     margin: 0 auto;
-
 }
 
+@media screen and (max-width: 420px){
+  .section__padding{
+    padding: 0.5rem 1rem;
+  }
+}
 
 .scale-up-hor-center {
 	-webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
