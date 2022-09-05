@@ -54,7 +54,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="nuvola__navbar">
+    <div className="nuvola__navbar shadow-drop-bottom">
       <div className="nuvola__navbar-content section__padding">
         <div className="nuvola__navbar-logo">
           <img src={logo} alt="logo" />

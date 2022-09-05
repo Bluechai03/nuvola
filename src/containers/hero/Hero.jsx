@@ -1,6 +1,12 @@
 import React from 'react';
 import nuvolaStand from '../../assets/nuvola-stand.png';
-import vector1 from '../../assets/hero-blobs/Vector-1.svg';
+import {
+  circlePink,
+  circlePurple,
+  circlePinkOutline,
+  blobPink,
+  blobPurple,
+} from './imports.js';
 import './hero.css';
 
 const Hero = () => {
@@ -18,8 +24,26 @@ const Hero = () => {
           </button>
         </div>
         <div className="nuvola__hero-content-col col--two">
-          <img src={nuvolaStand} alt="nuvola sample" />
-          <img src={vector1} alt="" className="vector" />
+          <img src={nuvolaStand} alt="nuvola sample" className="nuvola__hero-stand" />
+          <div className="nuvola__hero-blobs">
+            <img
+              src={circlePinkOutline}
+              alt=""
+              className="blob blob-circle-pink-outline rotate-vert-center"
+            />
+            <img src={blobPink} alt="" className="blob blob-blob-pink slide" />
+            <img
+              src={circlePurple}
+              alt=""
+              className="blob blob-circle-purple rotate-vert-center"
+            />
+            <img
+              src={circlePink}
+              alt=""
+              className="blob blob-circle-pink rotate-vert-center"
+            />
+            <img src={blobPurple} alt="" className="blob blob-blob-purple slide" />
+          </div>
         </div>
         <div className="nuvola__hero-content-col col--three">
           <p className="nuvola__hero-content__sub-title">

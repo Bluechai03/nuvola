@@ -36,10 +36,46 @@
     color: var(--primary-text);
 }
 
-.vector{
+.nuvola__hero-stand{
+    z-index: 2;
+}
+
+.nuvola__hero-blobs{
     position: absolute;
-    top: 135px;
+    inset: 0;
+}
+
+.blob{
+    position: absolute;
+}
+
+.blob-circle-pink{
+    bottom: 2rem;
+    left: 0;
+}
+
+.blob-circle-purple{
+    top: 8.5rem;
     right: 0;
+}
+
+.blob-circle-pink-outline{
+    top: 4rem;
+    left: 0;
+}
+
+.blob-blob-pink{
+    top: -50px;
+    right: 1rem;
+}
+
+.blob-blob-pink.slide{
+    animation-duration: 8s;
+}
+
+.blob-blob-purple{
+    bottom: -5px;
+    left: 6rem;
 }
 
 .col--one{
@@ -72,6 +108,10 @@
         display: flex;
         gap: 30px;
     }
+
+    .nuvola__hero img{
+        scale: 0.9;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -86,4 +126,6 @@
         line-height: 29.75px;
 
     }
+
+
 }
