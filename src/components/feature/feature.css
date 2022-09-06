@@ -8,8 +8,12 @@
 
 h1.nuvola__feature-title--number{
     color: var(--secondary-clr);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
 }
 
 .nuvola__feature-text{
     max-width: 225px;
+    padding-top: 25px;
 }
