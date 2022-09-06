@@ -42,15 +42,33 @@ button{
   text-transform: uppercase;
 }
 
+.nuvola__text{
+  color: var(--primary-text);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31.5px;
+}
+
 .section__padding{
     max-width: 1170px;
     padding: 1rem 2rem;
     margin: 0 auto;
 }
 
+
 @media screen and (max-width: 420px){
+  .h1-title{
+    font-size: 34px;
+    line-height: 42.5px;
+  }
+
+  .nuvola__text{
+    font-size: 17px;
+    line-height: 29.75px;
+  }
+
   .section__padding{
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 15px;
   }
 }
 

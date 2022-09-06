@@ -27,6 +27,7 @@
     line-height: 59px;
     color: var(--primary-clr);
     text-transform: uppercase;
+    z-index: 3;
 }
 
 .nuvola__hero-content__sub-title{
@@ -37,6 +38,7 @@
 }
 
 .nuvola__hero-stand{
+    position: relative;
     z-index: 2;
 }
 
@@ -47,6 +49,7 @@
 
 .blob{
     position: absolute;
+    width: max-content;
 }
 
 .blob-circle-pink{
@@ -86,7 +89,10 @@
 
 .col--two{
     width: 100%;
-    max-width: 450px;
+}
+
+.col--two>.wrapper{
+    z-index: 0;
 }
 
 .col--three{
@@ -99,32 +105,33 @@
         gap: 20px;
     }
 
-    .col--one .nuvola__hero-content__sub-title,
-    .col--one .nuvola__hero-content__btn{
+    .nuvola__hero-content.col--one .nuvola__hero-content__sub-title,
+    .nuvola__hero-content.col--one .nuvola__hero-content__btn{
         display: none;
     }
 
-    .col--three{
+    .nuvola__hero-content.col--two{
+        scale: 0.8;
+    }
+
+    .nuvola__hero-content.col--three{
         display: flex;
         gap: 30px;
     }
 
-    .nuvola__hero img{
-        scale: 0.9;
-    }
+
+
 }
 
 @media screen and (max-width: 500px){
     .nuvola__hero-content__title{
         font-size: 34px;
         line-height: 42.5px;
-        
     }
 
     .nuvola__hero-content__sub-title{
         font-size: 17px;
         line-height: 29.75px;
-
     }
 
 

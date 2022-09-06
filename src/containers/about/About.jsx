@@ -11,7 +11,7 @@ const About = () => {
         </div>
         <div className="nuvola__about-content-col col--two">
           <div className="nuvola__about-content__title h1-title">About Our System</div>
-          <p className="nuvola__about-content__description">
+          <p className="nuvola__about-content__description nuvola__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
