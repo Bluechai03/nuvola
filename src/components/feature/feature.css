@@ -1,0 +1,15 @@
+.nuvola__feature{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 22px;
+}
+
+
+h1.nuvola__feature-title--number{
+    color: var(--secondary-clr);
+}
+
+.nuvola__feature-text{
+    max-width: 225px;
+}
