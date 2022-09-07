@@ -1,74 +1,64 @@
-.nuvola__about{
-    padding: 10rem 0;
+.nuvola__about {
+  padding: 10rem 0;
 }
 
-.nuvola__about-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5rem;
+.nuvola__about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
 }
 
-
-.nuvola__about-content-col{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex: 1;
+.nuvola__about-content-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
 }
 
-.nuvola__about-content-col.col--one{
-    overflow: hidden;
+.nuvola__about-content-col.col--one {
+  overflow: hidden;
 }
 
 .nuvola__about-content-col.col--one img {
-    background: var(--light-blue-clr);
-    border-radius: 50vw;
-
+  background: var(--light-blue-clr);
+  border-radius: 50vw;
 }
 
-
-.nuvola__about-content__title{
-    display: flex;
-    flex-direction: column;
+.nuvola__about-content__title {
+  display: flex;
+  flex-direction: column;
 }
 
-.nuvola__about-content__title::after{
-    content: '';
-    margin-top: 10px;
-    width: 150px;
-    height: 2px;
-    background: var(--secondary-clr);
+.nuvola__about-content__title::after {
+  content: '';
+  margin-top: 10px;
+  width: 150px;
+  height: 2px;
+  background: var(--secondary-clr);
 }
 
-.nuvola__about-content__description{
-    margin-top: 36px;
-    font-size: 18px;
-    line-height: 31.5px;
-    color: var(--primary-text);
+.nuvola__about-content__description {
+  margin-top: 36px;
+  font-size: 18px;
+  line-height: 31.5px;
+  color: var(--primary-text);
 }
 
-@media screen and (max-width: 850px){
-    .nuvola__about{
-        padding: 2rem 0;
-    }
+@media screen and (max-width: 850px) {
+  .nuvola__about-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-    .nuvola__about-content{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .nuvola__about-content-col.col--one{
-        margin-top: 30px;
-    }
+  .nuvola__about-content-col.col--one {
+    margin-top: 30px;
+  }
 }
 
-@media screen and (max-width: 500px){
-    .nuvola__about{
-    }
-
-    .nuvola__about-content__title{
-
-    }
+@media screen and (max-width: 420px) {
+  .nuvola__about {
+    padding: 3.5rem 0;
+  }
 }

@@ -43,6 +43,20 @@ const Gallery = () => {
           navigation={true}
           modules={[Pagination, Navigation]}
           className="mySwiper"
+          breakpoints={{
+            0: {},
+            320: {
+              slidesPerView: 1,
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 2,
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 3,
+            },
+          }}
         >
           <SwiperSlide>
             <img src={gallery02} alt="" />

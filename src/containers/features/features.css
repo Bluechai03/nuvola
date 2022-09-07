@@ -1,35 +1,41 @@
-.nuvola__features{
-    position: relative;
-    background: var(--light-blue-clr) url('../../assets/section-bg.png') no-repeat;
-    background-size: cover;
-    padding: 10rem 0;
+.nuvola__features {
+  position: relative;
+  background: var(--light-blue-clr) url('../../assets/section-bg.png') no-repeat;
+  background-size: cover;
+  padding: 10rem 0;
 }
 
-.nuvola__features-content__title{
+.nuvola__features-content__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.nuvola__features-content__title::after {
+  content: '';
+  margin-top: 10px;
+  width: 150px;
+  height: 2px;
+  background: var(--secondary-clr);
+}
+
+.nuvola__features-content__grid {
+  padding-top: 110px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px 5vw;
+}
+
+@media screen and (max-width: 600px) {
+  .nuvola__features-content__grid {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
-.nuvola__features-content__title::after{
-    content: '';
-    margin-top: 10px;
-    width: 150px;
-    height: 2px;
-    background: var(--secondary-clr);
-}
-
-.nuvola__features-content__grid{
-    padding-top: 110px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 70px 5vw;
-}
-
-@media screen and (max-width: 600px){
-    .nuvola__features-content__grid{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+@media screen and (max-width: 420px) {
+  .nuvola__features {
+    padding: 3.5rem 0;
+  }
 }
