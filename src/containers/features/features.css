@@ -2,7 +2,7 @@
     position: relative;
     background: var(--light-blue-clr) url('../../assets/section-bg.png') no-repeat;
     background-size: cover;
-    padding: 150px 0;
+    padding: 10rem 0;
 }
 
 .nuvola__features-content__title{

@@ -30,7 +30,7 @@ const Socials = () => (
   <>
     <div>
       <a href="https://www.facebook.com/novolaisrael" target="_blank" rel="noreferrer">
-        <img class="nuvola__navbar-socials__img" src={facebook} alt="facebook" />
+        <img className="nuvola__navbar-socials__img" src={facebook} alt="facebook" />
       </a>
     </div>
     <div>
@@ -39,12 +39,12 @@ const Socials = () => (
         target="_blank"
         rel="noreferrer"
       >
-        <img class="nuvola__navbar-socials__img" src={youtube} alt="youtube" />
+        <img className="nuvola__navbar-socials__img" src={youtube} alt="youtube" />
       </a>
     </div>
     <div>
       <a href="https://www.instagram.com/nuvola_israel/" target="_blank" rel="noreferrer">
-        <img class="nuvola__navbar-socials__img" src={instagram} alt="instagram" />
+        <img className="nuvola__navbar-socials__img" src={instagram} alt="instagram" />
       </a>
     </div>
   </>

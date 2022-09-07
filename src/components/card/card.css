@@ -1,0 +1,36 @@
+.nuvola__card{
+    max-width: 370px;
+    text-align: center;
+    padding: 15px 40px 40px;
+}
+
+.nuvola__card:nth-child(2){
+    padding-top: 10px;
+    border-top: 5px solid var(--secondary-clr);
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nuvola__card-icon{
+    background: url('../../assets/card-icon-bg.svg') no-repeat center center;
+    background-size: contain;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nuvola__card-title{
+    color: var(--secondary-clr);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 27px;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+.nuvola__card-description{
+    color: var(--secondary-text);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31.5px;
+}
