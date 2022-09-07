@@ -1,0 +1,87 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.nuvola__gallery{
+    position: relative;
+    background: var(--light-blue-clr) url('../../assets/section-bg.png') no-repeat;
+    background-size: cover;
+    padding: 10rem 0;
+}
+
+.nuvola__gallery-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.nuvola__gallery-content__description{
+    max-width: 500px;
+}
+
+.nuvola__gallery-slider{
+    padding-top: 48px;
+}
+
+
+.swiper {
+    width: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nuvola__gallery-slider .swiper-button-prev, .nuvola__gallery-slider .swiper-button-next{
+      width: 40px;
+      height: 40px;
+      border: 2.5px solid var(--primary-clr);
+      border-radius: 50vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .nuvola__gallery-slider .swiper-button-prev::after, .nuvola__gallery-slider .swiper-button-next::after{
+      font-size: 21px;
+      color: var(--primary-clr);
+  }
+
+  .nuvola__gallery-slider .swiper-pagination-bullet{
+      background: rgba(255, 255, 255, 0);
+      border: 1px solid var(--secondary-clr);
+      opacity: 1;
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active{
+      background: var(--secondary-clr);
+  }
