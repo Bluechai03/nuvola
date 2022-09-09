@@ -1,0 +1,74 @@
+.nuvola__contact {
+  padding: 10rem 0;
+}
+
+.nuvola__contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.nuvola__contact-bg {
+  display: flex;
+  margin: auto;
+  position: absolute;
+  inset: 0;
+  width: 90%;
+  aspect-ratio: 1/1;
+  background: #e3e9ff;
+  border-radius: 100vw;
+}
+
+h2.nuvola__contact-content__sub-title {
+  color: var(--secondary-clr);
+  padding-bottom: 15px;
+}
+
+.nuvola__contact-content__text {
+  padding-left: 75px;
+}
+
+.nuvola__contact-content-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.nuvola__contact-content-col.col--one {
+  align-items: center;
+}
+
+.nuvola__contact-content-col.col--two {
+  max-width: 535px;
+  padding: 50px;
+}
+
+.nuvola__contact-stand {
+  position: relative;
+  /* background: var(--light-blue-clr); */
+  width: 100%;
+  z-index: 2;
+}
+
+.blob {
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .nuvola__contact-content {
+    flex-direction: column-reverse;
+  }
+
+  .nuvola__contact-content__text {
+    padding-left: 0;
+  }
+
+  .nuvola__contact-content-col.col--two {
+    padding: 0;
+  }
+}

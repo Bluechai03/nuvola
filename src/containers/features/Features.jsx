@@ -4,7 +4,7 @@ import { Feature } from '../../components';
 
 const Features = () => {
   return (
-    <div className="nuvola__features">
+    <div className="nuvola__features" id="features">
       <div className="nuvola__features-content section__padding">
         <div className="nuvola__features-content__title h1-title">How it works</div>
         <div className="nuvola__features-content__grid">

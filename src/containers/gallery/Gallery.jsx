@@ -14,7 +14,7 @@ import { gallery02, gallery04, gallery06 } from './imports';
 
 const Gallery = () => {
   return (
-    <div className="nuvola__gallery">
+    <div className="nuvola__gallery" id="gallery">
       <div className="nuvola__gallery-content section__padding">
         <div className="nuvola__gallery-content__title h1-title">
           Lorem ipsum dolor sit amet

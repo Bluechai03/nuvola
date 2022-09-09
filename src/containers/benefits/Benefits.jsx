@@ -63,7 +63,7 @@ const Benefits = () => {
   }, [setToggleSlider, windowSize]);
 
   return (
-    <div className="nuvola__benefits">
+    <div className="nuvola__benefits" id="benefits">
       <div className="nuvola__benefits-content section__padding">
         <div className="nuvola__benefits-content__title h1-title">System Benefits</div>
         <p className="nuvola__benefits-content__description nuvola__text">
