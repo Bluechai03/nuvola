@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './benefits.css';
-import Card from '../../components/card/Card';
+import { Card } from '../../components';
 import { RiSettings5Line, RiRocketLine } from 'react-icons/ri';
 import { BsCash } from 'react-icons/bs';
 
@@ -91,6 +91,7 @@ const Benefits = () => {
               },
               640: {
                 slidesPerView: 2,
+                spaceBetween: 30,
               },
             }}
           >
