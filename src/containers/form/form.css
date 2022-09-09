@@ -1,0 +1,79 @@
+.nuvola__form {
+  padding: 10rem 0;
+}
+
+.nuvola__form-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nuvola__form-content-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.nuvola__form-content-col.col--one {
+  align-items: flex-start;
+}
+
+.nuvola__form-content-col.col--two {
+  max-width: 535px;
+}
+
+.nuvola__form-content-col.col--three {
+  display: none;
+}
+
+.nuvola__form-content__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nuvola__form-content__form input:not([type='submit']) {
+  all: unset;
+  border-bottom: 1px solid var(--secondary-text);
+  opacity: 0.75;
+  height: 48px;
+}
+
+.nuvola__form-content-col .nuvola__form-submit {
+  max-width: 240px;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.nuvola__form-stand {
+  position: relative;
+  z-index: 2;
+}
+
+.blob {
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .nuvola__form-content {
+    flex-direction: column;
+    gap: 50px 30px;
+  }
+
+  .nuvola__form-content-col.col--one .nuvola__form-content__form {
+    display: none;
+  }
+
+  .nuvola__form-content-col.col--three {
+    display: flex;
+  }
+
+  .nuvola__form-content-col.col--two {
+    scale: 0.8;
+  }
+}
