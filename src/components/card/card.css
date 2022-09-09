@@ -36,9 +36,13 @@
   line-height: 31.5px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 991px) {
   .nuvola__card {
     border-radius: 10px;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nuvola__card:hover {
     box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1);
   }
 }

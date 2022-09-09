@@ -23,6 +23,10 @@
   gap: 30px;
 }
 
+.nuvola__benefits-slider .swiper-slide {
+  padding: 56px 0;
+}
+
 @media screen and (max-width: 991px) {
   .nuvola__benefits-content__grid {
     flex-wrap: wrap;
