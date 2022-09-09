@@ -10,14 +10,7 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper';
-import {
-  gallery01,
-  gallery02,
-  gallery03,
-  gallery04,
-  gallery05,
-  gallery06,
-} from './imports';
+import { gallery02, gallery04, gallery06 } from './imports';
 
 const Gallery = () => {
   return (

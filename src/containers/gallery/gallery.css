@@ -19,14 +19,6 @@
   max-width: 500px;
 }
 
-.nuvola__gallery-slider {
-  padding-top: 48px;
-}
-
-.swiper {
-  width: 100%;
-}
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -60,9 +52,9 @@
   opacity: 1;
 }
 
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
+.nuvola__gallery-slider .swiper {
+  width: 100%;
+  padding: 56px 0;
 }
 
 .nuvola__gallery-slider .swiper-button-prev,
@@ -74,6 +66,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.nuvola__gallery-slider .swiper-button-prev {
+  left: 15vw;
+}
+
+.nuvola__gallery-slider .swiper-button-next {
+  right: 15vw;
 }
 
 .nuvola__gallery-slider .swiper-button-prev::after,
@@ -106,5 +106,15 @@
 
   .nuvola__gallery-slider {
     padding: 0.5rem;
+  }
+
+  .nuvola__gallery-slider .swiper-button-prev,
+  .nuvola__gallery-slider .swiper-button-next {
+    border: none;
+  }
+
+  .nuvola__gallery-slider .swiper-button-prev::after,
+  .nuvola__gallery-slider .swiper-button-next::after {
+    display: none;
   }
 }
