@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import { Pagination } from 'swiper';
+import { Pagination, Navigation } from 'swiper';
 
 const Testimonials = () => {
   return (
@@ -29,7 +29,8 @@ const Testimonials = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
+          navigation={true}
+          modules={[Pagination, Navigation]}
           className="nuvola__testimonials-swiper"
           breakpoints={{
             0: {},

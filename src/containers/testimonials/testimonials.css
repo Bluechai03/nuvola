@@ -25,3 +25,17 @@
   -webkit-align-items: center;
   align-items: center;
 }
+
+.nuvola__testimonials-slider .swiper {
+  /* padding: 0 50px; */
+}
+
+.nuvola__testimonials-slider .swiper-button-next::after,
+.nuvola__testimonials-slider .swiper-button-prev::after {
+  font-size: 28px;
+  color: var(--primary-clr);
+}
+
+.nuvola__testimonials-slider .swiper-button-next {
+  /* right: -50px; */
+}
