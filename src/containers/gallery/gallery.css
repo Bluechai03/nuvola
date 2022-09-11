@@ -17,7 +17,7 @@
   max-width: 500px;
 }
 
-.swiper-slide {
+.nuvola__gallery-slider .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -37,7 +37,7 @@
   align-items: center;
 }
 
-.swiper-slide img {
+.nuvola__gallery-slider .swiper-slide img {
   display: block;
   width: 100%;
   height: auto;
@@ -46,13 +46,13 @@
   transition: opacity 150ms ease-in-out;
 }
 
-.swiper-slide.swiper-slide-active img {
+.nuvola__gallery-slider .swiper-slide.swiper-slide-active img {
   opacity: 1;
 }
 
 .nuvola__gallery-slider .swiper {
   width: 100%;
-  padding: 56px 0;
+  padding: 4rem 0;
 }
 
 .nuvola__gallery-slider .swiper-button-prev,

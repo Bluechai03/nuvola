@@ -61,6 +61,18 @@ input[type='submit'] {
   line-height: 31.5px;
 }
 
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid var(--secondary-clr);
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--secondary-clr);
+}
+
 .section__padding {
   max-width: 1170px;
   padding: 1rem 2rem;

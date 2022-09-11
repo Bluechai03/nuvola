@@ -1,0 +1,55 @@
+.nuvola__ct {
+  background: #fff;
+  /* shadow/black/cards */
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1);
+  max-width: 370px;
+  border-radius: 0 0 5px 5px;
+  transition: box-shadow 250ms ease-in-out;
+}
+
+.nuvola__ct-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 40px 40px;
+}
+
+.nuvola__ct:hover {
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1),
+    0 5px 0 var(--secondary-clr) inset;
+}
+
+.nuvola__ct-content__img {
+  background: #fff;
+  border-radius: 50vw;
+  position: absolute;
+  top: -70px;
+  padding: 10px;
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nuvola__ct-content__img {
+  max-width: 120px;
+}
+
+.nuvola__ct-content__name,
+.nuvola__ct-content__date {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.nuvola__ct-content__name {
+  font-weight: 700;
+  color: var(--secondary-clr);
+}
+
+.nuvola__ct-content__date {
+  font-weight: 300;
+  color: var(--secondary-text);
+}
+
+.nuvola__ct-content__text {
+  padding-top: 30px;
+}
