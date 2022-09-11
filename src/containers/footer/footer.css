@@ -1,0 +1,68 @@
+.nuvola__footer {
+  background: var(--primary-clr);
+  padding: 80px 0;
+}
+
+.nuvola__footer-content {
+  display: flex;
+}
+
+.nuvola__footer-content li,
+.nuvola__footer-content__heading {
+  text-transform: uppercase;
+  list-style: none;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nuvola__footer-content__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 35px;
+}
+
+.nuvola__footer-content__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.nuvola__footer-content__nav a:hover {
+  color: var(--secondary-clr);
+}
+
+.nuvola__footer-content-col {
+  flex: 1;
+}
+
+.nuvola__footer-content__row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nuvola__footer-content__row + .nuvola__footer-content__row {
+  padding-top: 50px;
+}
+
+.nuvola__footer-socials-container {
+  display: flex;
+  gap: 21px;
+}
+
+.nuvola__footer-socials {
+  display: flex;
+  align-items: center;
+  width: 25px;
+  margin: 2.5px 0;
+}
+
+@media screen and (max-width: 991px) {
+  .nuvola__footer-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
