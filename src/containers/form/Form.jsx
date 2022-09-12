@@ -26,27 +26,15 @@ const Form = () => {
         <div className="nuvola__form-content-col col--two">
           <div className="wrapper">
             <div className="nuvola__form-blobs">
-              <img
-                src={blobPurple03}
-                alt=""
-                className="blob blob-blob-purple rotate-vert-center"
-              />
-              <img src={circlePurple} alt="" className="blob blob-circle-purple slide" />
+              <img src={blobPurple03} alt="" className="blob blob-blob-purple" />
+              <img src={circlePurple} alt="" className="blob blob-circle-purple" />
               <img
                 src={circlePinkOutline}
                 alt=""
-                className="blob blob-circle-pink-outline rotate-vert-center"
+                className="blob blob-circle-pink-outline"
               />
-              <img
-                src={blobPink03}
-                alt=""
-                className="blob blob-blob-pink rotate-vert-center"
-              />
-              <img
-                src={circlePurple}
-                alt=""
-                className="blob blob-circle-purple-01 slide"
-              />
+              <img src={blobPink03} alt="" className="blob blob-blob-pink" />
+              <img src={circlePurple} alt="" className="blob blob-circle-purple-01" />
             </div>
             <img src={nuvolaStandRight} alt="" className="nuvola__form-stand" />
           </div>

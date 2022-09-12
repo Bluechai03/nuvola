@@ -22,10 +22,23 @@
   overflow: hidden;
 }
 
-.nuvola__about-content__img {
+.nuvola__about-content__circle-bg {
+  position: absolute;
   background: var(--light-blue-clr);
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 500px;
   border-radius: 50vw;
+  z-index: -1;
+}
+
+.nuvola__about-content__img {
   z-index: 2;
+}
+
+.wrapper img {
+  z-index: 1;
 }
 
 .nuvola__about-content__title {

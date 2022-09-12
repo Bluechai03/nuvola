@@ -15,28 +15,17 @@ const About = () => {
       <div className="nuvola__about-content section__padding">
         <div className="nuvola__about-content-col col--one">
           <div className="wrapper">
+            <div className="nuvola__about-content__circle-bg"></div>
             <div className="nuvola__about-blobs">
-              <img
-                src={blobPurple02}
-                alt=""
-                className="blob blob-blob-purple rotate-vert-center"
-              />
-              <img src={circlePurple} alt="" className="blob blob-circle-purple slide" />
+              <img src={blobPurple02} alt="" className="blob blob-blob-purple" />
+              <img src={circlePurple} alt="" className="blob blob-circle-purple" />
               <img
                 src={circlePinkOutline}
                 alt=""
-                className="blob blob-circle-pink-outline rotate-vert-center"
+                className="blob blob-circle-pink-outline"
               />
-              <img
-                src={blobPink02}
-                alt=""
-                className="blob blob-blob-pink rotate-vert-center"
-              />
-              <img
-                src={circlePurple}
-                alt=""
-                className="blob blob-circle-purple-01 slide"
-              />
+              <img src={blobPink02} alt="" className="blob blob-blob-pink" />
+              <img src={circlePurple} alt="" className="blob blob-circle-purple-01" />
             </div>
             <img src={aboutNuvola} alt="" className="nuvola__about-content__img" />
           </div>
