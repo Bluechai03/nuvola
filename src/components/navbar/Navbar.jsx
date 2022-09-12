@@ -85,7 +85,10 @@ const Navbar = () => {
                 <img src={israel} alt="israel flag" />
                 <RiCloseLine size={27} onClick={() => setToggleMenu(false)} />
               </div>
-              <div className="nuvola__navbar-mobile-menu-container-links">
+              <div
+                className="nuvola__navbar-mobile-menu-container-links"
+                onClick={() => setToggleMenu(false)}
+              >
                 <Menu />
               </div>
             </div>

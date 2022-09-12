@@ -29,6 +29,7 @@ const BackToTop = () => {
             className="nuvola__back-to-top--icon"
             size={64}
             onClick={backToTop}
+            color="#aaa"
           />
         )}
       </div>

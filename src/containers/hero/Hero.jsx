@@ -29,19 +29,11 @@ const Hero = () => {
               <img
                 src={circlePinkOutline}
                 alt=""
-                className="blob blob-circle-pink-outline rotate-vert-center"
+                className="blob blob-circle-pink-outline circle"
               />
               <img src={blobPink} alt="" className="blob blob-blob-pink slide" />
-              <img
-                src={circlePurple}
-                alt=""
-                className="blob blob-circle-purple rotate-vert-center"
-              />
-              <img
-                src={circlePink}
-                alt=""
-                className="blob blob-circle-pink rotate-vert-center"
-              />
+              <img src={circlePurple} alt="" className="blob blob-circle-purple circle" />
+              <img src={circlePink} alt="" className="blob blob-circle-pink circle" />
               <img src={blobPurple} alt="" className="blob blob-blob-purple slide" />
             </div>
             <img src={nuvolaStand} alt="nuvola sample" className="nuvola__hero-stand" />
