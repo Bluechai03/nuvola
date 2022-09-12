@@ -10,6 +10,7 @@
 }
 
 .nuvola__about-content-col {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -21,9 +22,10 @@
   overflow: hidden;
 }
 
-.nuvola__about-content-col.col--one img {
+.nuvola__about-content__img {
   background: var(--light-blue-clr);
   border-radius: 50vw;
+  z-index: 2;
 }
 
 .nuvola__about-content__title {

@@ -10,7 +10,7 @@ import {
   Hero,
   Testimonials,
 } from './containers';
-import { Navbar } from './components';
+import { Navbar, BackToTop } from './components';
 
 import './app.css';
 
@@ -26,6 +26,7 @@ const App = () => {
       <Form />
       <Testimonials />
       <Contact />
+      <BackToTop />
       <Footer />
     </div>
   );

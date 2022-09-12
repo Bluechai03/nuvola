@@ -73,6 +73,14 @@ input[type='submit'] {
   background: var(--secondary-clr);
 }
 
+.blob {
+  /* slide animation */
+}
+
+.circle {
+  /* rotate animation*/
+}
+
 .section__padding {
   max-width: 1170px;
   padding: 1rem 2rem;
