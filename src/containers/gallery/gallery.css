@@ -92,16 +92,17 @@
   background: var(--secondary-clr);
 }
 
-/* TODO: Fix pagination and navigation buttons for gallery slider */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   .nuvola__gallery {
-    padding: 3.5rem 0;
+    padding: 5rem 0;
   }
 
   .nuvola__gallery-content {
     text-align: left;
   }
+}
 
+@media screen and (max-width: 480px) {
   .nuvola__gallery-slider {
     padding: 0.5rem;
   }

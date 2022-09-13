@@ -39,3 +39,10 @@
 .nuvola__testimonials-slider .swiper-button-next {
   /* right: -50px; */
 }
+
+@media screen and (max-width: 560px) {
+  .nuvola__testimonials {
+    padding: 5rem 0;
+    text-align: left;
+  }
+}

@@ -106,3 +106,9 @@
     right: -10px;
   }
 }
+
+@media screen and (max-width: 560px) {
+  .nuvola__form {
+    padding: 5rem 0;
+  }
+}
