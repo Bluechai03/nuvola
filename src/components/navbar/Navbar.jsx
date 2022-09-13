@@ -57,7 +57,16 @@ const Navbar = () => {
     <div className="nuvola__navbar shadow-drop-bottom">
       <div className="nuvola__navbar-content section__padding">
         <div className="nuvola__navbar-logo">
-          <img src={logo} alt="logo" />
+          <img
+            src={logo}
+            alt="logo"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+              });
+            }}
+          />
         </div>
         <div className="nuvola__navbar-links-container">
           <Menu />
