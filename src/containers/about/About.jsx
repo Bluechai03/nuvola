@@ -25,7 +25,7 @@ const About = () => {
                 className="blob blob-circle-pink-outline"
               />
               <img src={blobPink02} alt="" className="blob blob-blob-pink" />
-              <img src={circlePurple} alt="" className="blob blob-circle-purple-01" />
+              <img src={circlePink} alt="" className="blob blob-circle-purple-01" />
             </div>
             <img src={aboutNuvola} alt="" className="nuvola__about-content__img" />
           </div>
