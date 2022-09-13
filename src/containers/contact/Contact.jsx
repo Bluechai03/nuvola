@@ -1,29 +1,32 @@
 import React from 'react';
 import './contact.css';
 import nuvolaStand from '../../assets/nuvola-stand.png';
-import { circlePink, circlePurpleOutline } from './imports';
+import { circlePink, circlePurple, circlePurpleOutline } from './imports';
 const Contact = () => {
   return (
     <div className="nuvola__contact" id="contact">
       <div className="nuvola__contact-content section__padding">
         <div className="nuvola__contact-content-col col--one">
           <div className="nuvola__contact-bg"></div>
-          <div className="wrapper">
-            <div className="nuvola__contact-blobs">
+          <div className="nuvola__wrapper">
+            <div className="nuvola__particles">
               <img
                 src={circlePink}
                 alt=""
-                className="blob blob-circle-pink rotate-vert-center"
+                className="particle particle--circle"
+                id="particle__contact--circle-pink"
+              />
+              <img
+                src={circlePurple}
+                alt=""
+                className="particle particle--circle"
+                id="particle__contact--circle-purple"
               />
               <img
                 src={circlePurpleOutline}
                 alt=""
-                className="blob blob-circle-purple-outline slide"
-              />
-              <img
-                src={circlePurpleOutline}
-                alt=""
-                className="blob blob-circle-purple-outline rotate-vert-center"
+                className="particle particle--circle"
+                id="particle__contact--circle-purple-outline"
               />
             </div>
             <img src={nuvolaStand} alt="" className="nuvola__contact-stand" />

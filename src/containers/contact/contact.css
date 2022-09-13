@@ -55,8 +55,21 @@ h2.nuvola__contact-content__sub-title {
   z-index: 2;
 }
 
-.blob {
-  position: absolute;
+/* Particles */
+#particle__contact--circle-pink {
+  top: 30px;
+  left: 10px;
+  width: 40px;
+}
+
+#particle__contact--circle-purple {
+  top: 40px;
+  right: 0;
+}
+
+#particle__contact--circle-purple-outline {
+  top: 140px;
+  right: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -70,5 +83,9 @@ h2.nuvola__contact-content__sub-title {
 
   .nuvola__contact-content-col.col--two {
     padding: 0;
+  }
+
+  .nuvola__contact-bg {
+    width: 100%;
   }
 }

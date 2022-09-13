@@ -1,4 +1,4 @@
-import circlePurpleOutline from '../../assets/blobs/circle-purple-outline.svg';
 import circlePink from '../../assets/blobs/circle-pink.svg';
-
-export { circlePurpleOutline, circlePink };
+import circlePurple from '../../assets/blobs/circle-purple.svg';
+import circlePurpleOutline from '../../assets/blobs/circle-purple-outline.svg';
+export { circlePink, circlePurple, circlePurpleOutline };
