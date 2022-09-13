@@ -41,6 +41,7 @@
   z-index: 2;
 }
 
+/* Blobs */
 .nuvola__hero-blobs {
   position: absolute;
   inset: 0;
@@ -77,10 +78,13 @@
 
 .blob-blob-purple {
   bottom: -5px;
-  left: 6rem;
+  right: 10vw;
 }
 
-.col--one {
+.col--one,
+.nuvola__hero-content__details {
+  display: flex;
+  flex-direction: column;
   gap: 25px;
   justify-content: flex-start;
   align-items: flex-start;
@@ -94,7 +98,7 @@
   z-index: 0;
 }
 
-.col--three {
+.nuvola__hero-content-col.col--three {
   display: none;
 }
 
@@ -104,17 +108,22 @@
     gap: 20px;
   }
 
-  .nuvola__hero-content.col--one .nuvola__hero-content__sub-title,
-  .nuvola__hero-content.col--one .nuvola__hero-content__btn {
+  .nuvola__hero-content-col.col--one .nuvola__hero-content__details {
     display: none;
   }
 
-  .nuvola__hero-content.col--two {
+  .nuvola__hero-content-col.col--two {
     scale: 0.8;
   }
 
-  .nuvola__hero-content.col--three {
+  .nuvola__hero-content-col.col--three {
     display: flex;
+    gap: 30px;
+  }
+
+  .nuvola__hero-content-col.col--three .nuvola__hero-content__details {
+    display: flex;
+    flex-direction: column;
     gap: 30px;
   }
 }

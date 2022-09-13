@@ -3,3 +3,11 @@
   bottom: 3rem;
   right: 5rem;
 }
+
+@media screen and (max-width: 850px) {
+  .nuvola__back-to-top--icon {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+  }
+}

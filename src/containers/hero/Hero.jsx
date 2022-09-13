@@ -9,19 +9,25 @@ import {
 } from './imports.js';
 import './hero.css';
 
+const Details = () => (
+  <div className="nuvola__hero-content__details">
+    <p className="nuvola__hero-content__sub-title nuvola__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua.
+    </p>
+    <button type="button" className="nuvola__hero-content__btn">
+      Text
+    </button>
+  </div>
+);
+
 const Hero = () => {
   return (
     <div className="nuvola__hero" id="hero">
       <div className="nuvola__hero-content section__padding">
         <div className="nuvola__hero-content-col col--one">
           <h1 className="nuvola__hero-content__title">lorem ipsum dolor sit amet</h1>
-          <p className="nuvola__hero-content__sub-title nuvola__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </p>
-          <button type="button" className="nuvola__hero-content__btn">
-            Text
-          </button>
+          <Details />
         </div>
         <div className="nuvola__hero-content-col col--two">
           <div className="wrapper">
@@ -40,13 +46,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="nuvola__hero-content-col col--three">
-          <p className="nuvola__hero-content__sub-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </p>
-          <button type="button" className="nuvola__hero-content__btn">
-            Text
-          </button>
+          <Details />
         </div>
       </div>
     </div>
