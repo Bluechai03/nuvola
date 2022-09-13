@@ -18,27 +18,19 @@
   flex: 1;
 }
 
-.nuvola__about-content-col.col--one {
-  overflow: hidden;
-}
-
 .nuvola__about-content__circle-bg {
   position: absolute;
   background: var(--light-blue-clr);
   width: 100%;
-  max-width: 500px;
   height: 100%;
-  max-height: 500px;
+  border: 1px solid red;
   border-radius: 50vw;
   z-index: -1;
 }
 
 .nuvola__about-content__img {
-  z-index: 2;
-}
-
-.wrapper img {
-  z-index: 1;
+  /* background: var(--light-blue-clr); */
+  border-radius: 50vw;
 }
 
 .nuvola__about-content__title {
@@ -61,6 +53,67 @@
   color: var(--primary-text);
 }
 
+.nuvola__about-content .nuvola__particles {
+  z-index: -1;
+}
+
+/* Particles */
+#particle__about--blob-pink {
+  top: 10px;
+  left: -10px;
+}
+
+#particle__about--blob-purple {
+  bottom: 130px;
+  right: 0;
+}
+
+#particle__about--circle-purple {
+  bottom: 150px;
+  left: 40px;
+}
+
+#particle__about--circle-pink-outline {
+  bottom: 120px;
+  right: 100px;
+}
+
+#particle__about--circle-pink {
+  top: 10px;
+  left: 50%;
+}
+
+@media screen and (min-width: 851px) and (max-width: 991px) {
+  .nuvola__about-content .nuvola__particles img {
+    scale: 0.7;
+  }
+
+  #particle__about--blob-pink {
+    top: -20px;
+    left: -50px;
+  }
+
+  #particle__about--blob-purple {
+    bottom: 30px;
+    right: -20px;
+  }
+
+  #particle__about--circle-purple {
+    bottom: 70px;
+    left: 40px;
+  }
+
+  #particle__about--circle-pink-outline {
+    bottom: 40px;
+    right: 80px;
+  }
+
+  #particle__about--circle-pink {
+    top: 10px;
+    left: 50%;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .nuvola__about-content {
     flex-direction: column-reverse;
@@ -72,8 +125,37 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 560px) {
   .nuvola__about {
     padding: 3.5rem 0;
+  }
+
+  .nuvola__about-content .nuvola__particles img {
+    scale: 0.7;
+  }
+
+  #particle__about--blob-pink {
+    top: -20px;
+    left: -50px;
+  }
+
+  #particle__about--blob-purple {
+    bottom: 30px;
+    right: -20px;
+  }
+
+  #particle__about--circle-purple {
+    bottom: 70px;
+    left: 40px;
+  }
+
+  #particle__about--circle-pink-outline {
+    bottom: 40px;
+    right: 80px;
+  }
+
+  #particle__about--circle-pink {
+    top: 10px;
+    left: 50%;
   }
 }
