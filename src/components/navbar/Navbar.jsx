@@ -85,11 +85,34 @@ const Navbar = () => {
                 <img src={israel} alt="israel flag" />
                 <RiCloseLine size={27} onClick={() => setToggleMenu(false)} />
               </div>
-              <div
-                className="nuvola__navbar-mobile-menu-container-links"
-                onClick={() => setToggleMenu(false)}
-              >
-                <Menu />
+              <div className="nuvola__navbar-mobile-menu-container-links">
+                <ul>
+                  <li>
+                    <a href="#about" onClick={() => setToggleMenu(false)}>
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#features" onClick={() => setToggleMenu(false)}>
+                      How It Works
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#benefits" onClick={() => setToggleMenu(false)}>
+                      Benefits
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#testimonials" onClick={() => setToggleMenu(false)}>
+                      Testimonials
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contact" onClick={() => setToggleMenu(false)}>
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           )}
