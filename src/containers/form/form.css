@@ -95,7 +95,7 @@
   }
 
   .nuvola__form-content-col.col--two {
-    scale: 0.7;
+    transform: scale(0.7);
   }
 
   #particle__form--blob-purple {

@@ -84,7 +84,7 @@
 
 @media screen and (min-width: 851px) and (max-width: 991px) {
   .nuvola__about-content .nuvola__particles img {
-    scale: 0.7;
+    transform: scale(0.7);
   }
 
   #particle__about--blob-pink {
@@ -129,32 +129,31 @@
     padding: 5rem 0;
   }
 
-  .nuvola__about-content .nuvola__particles img {
-    scale: 0.7;
+  .nuvola__particles {
+    transform: scale(0.6);
   }
-
   #particle__about--blob-pink {
-    top: -20px;
-    left: -50px;
+    top: -90px;
+    left: -100px;
   }
 
   #particle__about--blob-purple {
     bottom: 30px;
-    right: -20px;
+    right: -90px;
   }
 
   #particle__about--circle-purple {
     bottom: 70px;
-    left: 40px;
+    left: -50px;
   }
 
   #particle__about--circle-pink-outline {
-    bottom: 40px;
-    right: 80px;
+    bottom: 20px;
+    right: 40px;
   }
 
   #particle__about--circle-pink {
-    top: 10px;
+    top: -90px;
     left: 50%;
   }
 }
