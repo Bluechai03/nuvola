@@ -41,46 +41,6 @@
   z-index: 2;
 }
 
-/* Blobs */
-.nuvola__hero-blobs {
-  position: absolute;
-  inset: 0;
-}
-
-.blob {
-  position: absolute;
-  width: max-content;
-}
-
-.blob-circle-pink {
-  bottom: 2rem;
-  left: 0;
-}
-
-.blob-circle-purple {
-  top: 8.5rem;
-  right: 0;
-}
-
-.blob-circle-pink-outline {
-  top: 4rem;
-  left: 0;
-}
-
-.blob-blob-pink {
-  top: -50px;
-  right: 1rem;
-}
-
-.blob-blob-pink.slide {
-  animation-duration: 8s;
-}
-
-.blob-blob-purple {
-  bottom: -5px;
-  right: 10vw;
-}
-
 .col--one,
 .nuvola__hero-content__details {
   display: flex;
@@ -102,18 +62,45 @@
   display: none;
 }
 
+/* Particles */
+#particle__hero--circle-pink {
+  bottom: 2rem;
+  left: 0;
+}
+
+#particle__hero--circle-purple {
+  top: 8.5rem;
+  right: -50px;
+}
+
+#particle__hero--circle-pink-outline {
+  top: 4rem;
+  left: -50px;
+}
+
+#particle__hero--blob-pink {
+  top: -50px;
+  right: 1rem;
+  animation-duration: 8s;
+}
+
+#particle__hero--blob-purple {
+  bottom: -5px;
+  right: 30px;
+}
+
 @media screen and (max-width: 850px) {
   .nuvola__hero-content {
     flex-direction: column;
     gap: 20px;
   }
 
-  .nuvola__hero-content-col.col--one .nuvola__hero-content__details {
-    display: none;
+  .nuvola__hero-content-col.col--two {
+    scale: 0.9;
   }
 
-  .nuvola__hero-content-col.col--two {
-    scale: 0.8;
+  .nuvola__hero-content-col.col--one .nuvola__hero-content__details {
+    display: none;
   }
 
   .nuvola__hero-content-col.col--three {
@@ -129,6 +116,10 @@
 }
 
 @media screen and (max-width: 500px) {
+  .nuvola__hero-content-col.col--two {
+    scale: 0.8;
+  }
+
   .nuvola__hero-content__title {
     font-size: 34px;
     line-height: 42.5px;
@@ -137,5 +128,13 @@
   .nuvola__hero-content__sub-title {
     font-size: 17px;
     line-height: 29.75px;
+  }
+
+  #particle__hero--circle-pink-outline {
+    left: -40px;
+  }
+
+  #particle__hero--circle-purple {
+    right: -40px;
   }
 }

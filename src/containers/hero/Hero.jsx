@@ -30,17 +30,38 @@ const Hero = () => {
           <Details />
         </div>
         <div className="nuvola__hero-content-col col--two">
-          <div className="wrapper">
-            <div className="nuvola__hero-blobs">
+          <div className="nuvola__wrapper">
+            <div className="nuvola__particles">
               <img
                 src={circlePinkOutline}
                 alt=""
-                className="blob blob-circle-pink-outline circle"
+                className="particle particle--circle"
+                id="particle__hero--circle-pink-outline"
               />
-              <img src={blobPink} alt="" className="blob blob-blob-pink slide" />
-              <img src={circlePurple} alt="" className="blob blob-circle-purple circle" />
-              <img src={circlePink} alt="" className="blob blob-circle-pink circle" />
-              <img src={blobPurple} alt="" className="blob blob-blob-purple slide" />
+              <img
+                src={blobPink}
+                alt=""
+                className="particle particle--blob"
+                id="particle__hero--blob-pink"
+              />
+              <img
+                src={circlePurple}
+                alt=""
+                className="particle particle--circle"
+                id="particle__hero--circle-purple"
+              />
+              <img
+                src={circlePink}
+                alt=""
+                className="particle particle--circle"
+                id="particle__hero--circle-pink"
+              />
+              <img
+                src={blobPurple}
+                alt=""
+                className="particle particle--blob"
+                id="particle__hero--blob-purple"
+              />
             </div>
             <img src={nuvolaStand} alt="nuvola sample" className="nuvola__hero-stand" />
           </div>
