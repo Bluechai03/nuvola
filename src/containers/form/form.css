@@ -54,9 +54,30 @@
   z-index: 2;
 }
 
-.blob {
-  position: absolute;
-  width: 100%;
+/* Particles */
+#particle__form--blob-purple {
+  top: 10px;
+  left: -100px;
+}
+
+#particle__form--circle-purple {
+  top: 40px;
+  right: 0;
+}
+
+#particle__form--circle-pink-outline {
+  top: 120px;
+  right: 20px;
+}
+
+#particle__form--blob-pink {
+  bottom: 0;
+  right: 0;
+}
+
+#particle__form--circle-purple-01 {
+  bottom: 10px;
+  left: 30px;
 }
 
 @media screen and (max-width: 850px) {
@@ -74,6 +95,14 @@
   }
 
   .nuvola__form-content-col.col--two {
-    scale: 0.8;
+    scale: 0.7;
+  }
+
+  #particle__form--blob-purple {
+    left: -80px;
+  }
+
+  #particle__form--circle-pink-outline {
+    right: -10px;
   }
 }

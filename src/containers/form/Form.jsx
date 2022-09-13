@@ -24,17 +24,38 @@ const Form = () => {
           <FormInput />
         </div>
         <div className="nuvola__form-content-col col--two">
-          <div className="wrapper">
-            <div className="nuvola__form-blobs">
-              <img src={blobPurple03} alt="" className="blob blob-blob-purple" />
-              <img src={circlePurple} alt="" className="blob blob-circle-purple" />
+          <div className="nuvola__wrapper">
+            <div className="nuvola__particles">
+              <img
+                src={blobPurple03}
+                alt=""
+                className="particle particle--blob"
+                id="particle__form--blob-purple"
+              />
+              <img
+                src={circlePurple}
+                alt=""
+                className="particle particle--circle"
+                id="particle__form--circle-purple"
+              />
               <img
                 src={circlePinkOutline}
                 alt=""
-                className="blob blob-circle-pink-outline"
+                className="particle particle--circle"
+                id="particle__form--circle-pink-outline"
               />
-              <img src={blobPink03} alt="" className="blob blob-blob-pink" />
-              <img src={circlePurple} alt="" className="blob blob-circle-purple-01" />
+              <img
+                src={blobPink03}
+                alt=""
+                className="particle particle--blob"
+                id="particle__form--blob-pink"
+              />
+              <img
+                src={circlePurple}
+                alt=""
+                className="particle particle--circle"
+                id="particle__form--circle-purple-01"
+              />
             </div>
             <img src={nuvolaStandRight} alt="" className="nuvola__form-stand" />
           </div>
