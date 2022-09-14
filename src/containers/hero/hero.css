@@ -95,10 +95,6 @@
     gap: 20px;
   }
 
-  .nuvola__hero-content-col.col--two {
-    transform: scale(0.9);
-  }
-
   .nuvola__hero-content-col.col--one .nuvola__hero-content__details {
     display: none;
   }
@@ -115,11 +111,39 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-  .nuvola__hero-content-col.col--two {
-    transform: scale(0.8);
+@media screen and (max-width: 560px) {
+  .nuvola__hero-stand {
+    transform: scale(0.7);
   }
 
+  #particle__hero--circle-pink {
+    bottom: 0;
+    left: 0;
+  }
+
+  #particle__hero--circle-purple {
+    top: 5rem;
+    right: -105px;
+  }
+
+  #particle__hero--circle-pink-outline {
+    top: 1rem;
+    left: -90px;
+  }
+
+  #particle__hero--blob-pink {
+    top: -90px;
+    right: -75px;
+    animation-duration: 8s;
+  }
+
+  #particle__hero--blob-purple {
+    bottom: -40px;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .nuvola__hero-content__title {
     font-size: 34px;
     line-height: 42.5px;
@@ -128,13 +152,5 @@
   .nuvola__hero-content__sub-title {
     font-size: 17px;
     line-height: 29.75px;
-  }
-
-  #particle__hero--circle-pink-outline {
-    left: -40px;
-  }
-
-  #particle__hero--circle-purple {
-    right: -40px;
   }
 }

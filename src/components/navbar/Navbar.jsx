@@ -86,7 +86,13 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)}
             />
           ) : (
-            <RiMenuLine color="#2F3386" size={27} onClick={() => setToggleMenu(true)} />
+            <RiMenuLine
+              color="#2F3386"
+              size={27}
+              onClick={() => {
+                setToggleMenu(true);
+              }}
+            />
           )}
           {toggleMenu && (
             <div className="nuvola__navbar-mobile-menu-container scale-up-hor-center ">

@@ -94,10 +94,6 @@
     display: flex;
   }
 
-  .nuvola__form-content-col.col--two {
-    transform: scale(0.7);
-  }
-
   #particle__form--blob-purple {
     left: -80px;
   }
@@ -110,5 +106,37 @@
 @media screen and (max-width: 560px) {
   .nuvola__form {
     padding: 5rem 0;
+  }
+  .nuvola__form-content.section__padding {
+    gap: none;
+  }
+
+  .nuvola__form-stand {
+    transform: scale(0.7);
+  }
+
+  #particle__form--blob-purple {
+    top: -80px;
+    left: -80px;
+  }
+
+  #particle__form--circle-purple {
+    top: 0;
+    right: -50px;
+  }
+
+  #particle__form--circle-pink-outline {
+    top: 60px;
+    right: -50px;
+  }
+
+  #particle__form--blob-pink {
+    bottom: -60px;
+    right: -10px;
+  }
+
+  #particle__form--circle-purple-01 {
+    bottom: -30px;
+    left: 10px;
   }
 }

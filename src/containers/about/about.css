@@ -133,27 +133,27 @@
     transform: scale(0.6);
   }
   #particle__about--blob-pink {
-    top: -90px;
+    top: -70px;
     left: -100px;
   }
 
   #particle__about--blob-purple {
     bottom: 30px;
-    right: -90px;
+    right: -100px;
   }
 
   #particle__about--circle-purple {
-    bottom: 70px;
+    bottom: 80px;
     left: -50px;
   }
 
   #particle__about--circle-pink-outline {
     bottom: 20px;
-    right: 40px;
+    right: 20px;
   }
 
   #particle__about--circle-pink {
-    top: -90px;
-    left: 50%;
+    top: -80px;
+    left: 45%;
   }
 }

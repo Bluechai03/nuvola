@@ -89,3 +89,25 @@ h2.nuvola__contact-content__sub-title {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 560px) {
+  .nuvola__contact-stand {
+    transform: scale(0.72);
+  }
+
+  #particle__contact--circle-pink {
+    top: 0;
+    left: -20px;
+    width: 40px;
+  }
+
+  #particle__contact--circle-purple {
+    top: 10px;
+    right: -40px;
+  }
+
+  #particle__contact--circle-purple-outline {
+    top: 85px;
+    right: -20px;
+  }
+}
