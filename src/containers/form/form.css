@@ -7,6 +7,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 11rem;
 }
 
 .nuvola__form-content-col {
@@ -19,10 +20,12 @@
 
 .nuvola__form-content-col.col--one {
   align-items: flex-start;
+  flex: 3;
 }
 
 .nuvola__form-content-col.col--two {
   max-width: 535px;
+  flex: 2;
 }
 
 .nuvola__form-content-col.col--three {
