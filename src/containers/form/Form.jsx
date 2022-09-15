@@ -14,7 +14,7 @@ const Form = () => {
   const [toggleModal, setToggleModal] = useState(false);
 
   return (
-    <div className="nuvola__form">
+    <div className="nuvola__form" id="form">
       <div className="nuvola__form-content section__padding">
         <div className="nuvola__form-content-col col--one">
           <h1 className="nuola__form-content__title h1-title">Lorem Ipsum</h1>

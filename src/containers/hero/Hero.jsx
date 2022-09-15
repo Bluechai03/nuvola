@@ -15,9 +15,11 @@ const Details = () => (
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua.
     </p>
-    <button type="button" className="nuvola__hero-content__btn">
-      Text
-    </button>
+    <a href="#form">
+      <button type="button" className="nuvola__hero-content__btn">
+        Text
+      </button>
+    </a>
   </div>
 );
 
