@@ -61,6 +61,7 @@
 #particle__form--blob-purple {
   top: 10px;
   left: -100px;
+  animation-delay: 3s;
 }
 
 #particle__form--circle-purple {
@@ -71,16 +72,61 @@
 #particle__form--circle-pink-outline {
   top: 120px;
   right: 20px;
+  animation-delay: 3s;
 }
 
 #particle__form--blob-pink {
   bottom: 0;
   right: 0;
+  animation-delay: 6s;
 }
 
 #particle__form--circle-purple-01 {
   bottom: 10px;
   left: 30px;
+  animation-delay: 8s;
+}
+
+.nuvola__form-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+  background: rgba(95, 95, 95, 0.5);
+  -webkit-backdrop-filter: blur(4.5px);
+  backdrop-filter: blur(4.5px);
+}
+
+.nuvola__form-modal__wrapper {
+  position: absolute;
+  max-width: 400px;
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.nuvola__form-modal__title.h2-title {
+  padding: 30px 0 10px;
+  color: var(--secondary-clr);
+}
+
+.nuvola__form-modal__close {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  background: var(--secondary-clr);
+  border-radius: 50vw;
+  width: 30px;
+  height: 30px;
+  transition: transform 300ms ease-in-out;
+}
+
+.nuvola__form-modal__close:hover {
+  transform: rotate(90deg);
 }
 
 @media screen and (max-width: 850px) {
@@ -112,6 +158,10 @@
   }
   .nuvola__form-content.section__padding {
     gap: none;
+  }
+
+  .nuvola__form-modal {
+    padding: 2rem;
   }
 
   .nuvola__form-stand {

@@ -1,18 +1,18 @@
-import React from 'react';
+import { React, useState } from 'react';
 import './form.css';
 import nuvolaStandRight from '../../assets/nuvola-stand-right.png';
-import { circlePurple, circlePinkOutline, blobPink03, blobPurple03 } from './imports.js';
-
-const FormInput = () => (
-  <form action="#" className="nuvola__form-content__form">
-    <input type="text" name="name" id="nuvola__form-id" placeholder="NAME" />
-    <input type="tel" name="tel-no" id="nuvola__form-tel-no" placeholder="PHONE" />
-    <input type="email" name="email" id="nuvola__form-email" placeholder="EMAIL" />
-    <input type="submit" value="SIGN UP" className="nuvola__form-submit" />
-  </form>
-);
+import { RiCloseLine } from 'react-icons/ri';
+import {
+  circlePurple,
+  circlePinkOutline,
+  blobPink03,
+  blobPurple03,
+  iconChat,
+} from './imports.js';
 
 const Form = () => {
+  const [toggleModal, setToggleModal] = useState(false);
+
   return (
     <div className="nuvola__form">
       <div className="nuvola__form-content section__padding">
@@ -21,7 +21,30 @@ const Form = () => {
           <h2 className="nuvola__form-content__sub-title h2-title">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </h2>
-          <FormInput />
+          <form action="#" className="nuvola__form-content__form">
+            <input type="text" name="name" id="nuvola__form-id" placeholder="NAME" />
+            <input
+              type="tel"
+              name="tel-no"
+              id="nuvola__form-tel-no"
+              placeholder="PHONE"
+            />
+            <input
+              type="email"
+              name="email"
+              id="nuvola__form-email"
+              placeholder="EMAIL"
+            />
+            <input
+              type="submit"
+              value="SIGN UP"
+              className="nuvola__form-submit"
+              onClick={(e) => {
+                e.preventDefault();
+                setToggleModal(true);
+              }}
+            />
+          </form>
         </div>
         <div className="nuvola__form-content-col col--two">
           <div className="nuvola__wrapper">
@@ -61,9 +84,46 @@ const Form = () => {
           </div>
         </div>
         <div className="nuvola__form-content-col col--three">
-          <FormInput />
+          <form action="#" className="nuvola__form-content__form">
+            <input type="text" name="name" id="nuvola__form-id" placeholder="NAME" />
+            <input
+              type="tel"
+              name="tel-no"
+              id="nuvola__form-tel-no"
+              placeholder="PHONE"
+            />
+            <input
+              type="email"
+              name="email"
+              id="nuvola__form-email"
+              placeholder="EMAIL"
+            />
+            <input
+              type="submit"
+              value="SIGN UP"
+              className="nuvola__form-submit"
+              onClick={(e) => {
+                e.preventDefault();
+                setToggleModal(true);
+              }}
+            />
+          </form>
         </div>
       </div>
+      {toggleModal && (
+        <div className="nuvola__form-modal">
+          <div className="nuvola__form-modal__wrapper scale-up-hor-center">
+            <img src={iconChat} alt="" className="nuvola__form-modal-icon" />
+            <h2 className="nuvola__form-modal__title h2-title">Lorem Ipsum</h2>
+            <p className="nuvola__form-modal__text nuvola__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+            </p>
+            <div className="nuvola__form-modal__close">
+              <RiCloseLine size={30} color="#FFF" onClick={() => setToggleModal(false)} />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

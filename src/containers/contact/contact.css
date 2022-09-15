@@ -60,16 +60,20 @@ h2.nuvola__contact-content__sub-title {
   top: 30px;
   left: 10px;
   width: 40px;
+  animation-delay: 10s;
+  animation-duration: 5s;
 }
 
 #particle__contact--circle-purple {
   top: 40px;
   right: 0;
+  animation-delay: 9s;
 }
 
 #particle__contact--circle-purple-outline {
   top: 140px;
   right: 10px;
+  animation-delay: 6s;
 }
 
 @media screen and (max-width: 768px) {
@@ -91,6 +95,10 @@ h2.nuvola__contact-content__sub-title {
 }
 
 @media screen and (max-width: 560px) {
+  .nuvola__testimonials {
+    padding: 5rem 0;
+  }
+
   .nuvola__contact-stand {
     transform: scale(0.72);
   }

@@ -60,6 +60,7 @@
 #particle__about--blob-pink {
   top: 10px;
   left: -10px;
+  animation-delay: 5s;
 }
 
 #particle__about--blob-purple {
@@ -70,11 +71,13 @@
 #particle__about--circle-purple {
   bottom: 150px;
   left: 40px;
+  animation-delay: 5s;
 }
 
 #particle__about--circle-pink-outline {
   bottom: 120px;
   right: 100px;
+  animation-delay: 3s;
 }
 
 #particle__about--circle-pink {
