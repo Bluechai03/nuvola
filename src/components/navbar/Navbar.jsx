@@ -90,6 +90,7 @@ const Navbar = () => {
               color="#2F3386"
               size={27}
               onClick={() => {
+                document.querySelector('body').style.overflowY = 'hidden';
                 setToggleMenu(true);
               }}
             />
