@@ -83,14 +83,15 @@ const Navbar = () => {
             <RiMenuFoldLine
               color="#2F3386"
               size={27}
-              onClick={() => setToggleMenu(false)}
+              onClick={() => {
+                setToggleMenu(false);
+              }}
             />
           ) : (
             <RiMenuLine
               color="#2F3386"
               size={27}
               onClick={() => {
-                document.querySelector('body').style.overflowY = 'hidden';
                 setToggleMenu(true);
               }}
             />
